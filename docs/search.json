@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Yunpeng Xie",
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
     "section": "",
-    "text": "Welcome\n\nMy name is Yunpeng Xie, and I am currently a student in the UBC Master of Data Science program. I am interested in data science, quantitative analysis, and the application of artificial intelligence to real-world problems. My previous academic and project experience has included economics, finance, and AI-related research. Through the MDS program, I hope to strengthen my programming, statistical, and computational skills."
+    "text": "My first weeks in the UBC Master of Data Science program have been both challenging and exciting. I have been learning how to use tools such as Git, GitHub, Bash, VS Code, and Quarto while also adapting to the pace of the program.\nOne of the biggest changes for me has been becoming more comfortable with programming and command-line tools. At first, some of the workflows felt unfamiliar, but after working through several labs and assignments, I have started to understand how the different tools work together.\nI am looking forward to developing stronger skills in programming, statistics, and data analysis throughout the MDS program. I also hope to apply these skills to areas that interest me, including finance, artificial intelligence, and real-world data problems.\n\n\n\nUBC campus during my first weeks in MDS."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 8, 2026\n\n\nYunpeng Xie\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -33,5 +40,12 @@
     "title": "About",
     "section": "Outside of Data Science",
     "text": "Outside of Data Science\nOutside of data science, I enjoy traveling, exploring new places, and learning about technology and financial markets. I also like working on projects that combine technical analysis with practical applications."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Yunpeng Xie",
+    "section": "",
+    "text": "Welcome\n\nMy name is Yunpeng Xie, and I am currently a student in the UBC Master of Data Science program. I am interested in data science, quantitative analysis, and the application of artificial intelligence to real-world problems. My previous academic and project experience has included economics, finance, and AI-related research. Through the MDS program, I hope to strengthen my programming, statistical, and computational skills."
   }
 ]
