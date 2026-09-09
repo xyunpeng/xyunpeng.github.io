@@ -4,13 +4,34 @@
     "href": "index.html",
     "title": "Yunpeng Xie",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Welcome\n\nMy name is Yunpeng Xie, and I am currently a student in the UBC Master of Data Science program. I am interested in data science, quantitative analysis, and the application of artificial intelligence to real-world problems. My previous academic and project experience has included economics, finance, and AI-related research. Through the MDS program, I hope to strengthen my programming, statistical, and computational skills."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "I have an academic background that combines math, finance, and data-related analysis. Before joining the UBC Master of Data Science program, I completed graduate-level study and worked on projects involving quantitative analysis and artificial intelligence."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I have an academic background that combines math, finance, and data-related analysis. Before joining the UBC Master of Data Science program, I completed graduate-level study and worked on projects involving quantitative analysis and artificial intelligence."
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why Data Science",
+    "text": "Why Data Science\nI became interested in data science because it connects programming, statistics, and real-world decision-making. I am especially interested in using data and computational tools to understand complex problems in areas such as finance, healthcare, and artificial intelligence."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of Data Science",
+    "text": "Outside of Data Science\nOutside of data science, I enjoy traveling, exploring new places, and learning about technology and financial markets. I also like working on projects that combine technical analysis with practical applications."
   }
 ]

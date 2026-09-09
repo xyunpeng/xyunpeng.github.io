@@ -2,4 +2,18 @@
 title: "About"
 ---
 
-About this site
+---
+title: "About"
+---
+
+## Background
+
+I have an academic background that combines math, finance, and data-related analysis. Before joining the UBC Master of Data Science program, I completed graduate-level study and worked on projects involving quantitative analysis and artificial intelligence.
+
+## Why Data Science
+
+I became interested in data science because it connects programming, statistics, and real-world decision-making. I am especially interested in using data and computational tools to understand complex problems in areas such as finance, healthcare, and artificial intelligence.
+
+## Outside of Data Science
+
+Outside of data science, I enjoy traveling, exploring new places, and learning about technology and financial markets. I also like working on projects that combine technical analysis with practical applications.

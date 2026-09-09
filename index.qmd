@@ -2,6 +2,8 @@
 title: "Yunpeng Xie"
 ---
 
-This is a Quarto website.
+# Welcome
+![](images/profile.jpg){width=400 fig-alt="Yunpeng Xie"}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+My name is Yunpeng Xie, and I am currently a student in the UBC Master of Data Science program. I am interested in data science, quantitative analysis, and the application of artificial intelligence to real-world problems. My previous academic and project experience has included economics, finance, and AI-related research. Through the MDS program, I hope to strengthen my programming, statistical, and computational skills.
