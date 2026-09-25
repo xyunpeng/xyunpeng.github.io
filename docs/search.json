@@ -11,7 +11,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Exploring Palmer Penguins with Python\n\n\n\n\n\n\n\n\nSep 25, 2026\n\n\nYunpeng Xie\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 8, 2026\n\n\nYunpeng Xie\n\n\n\n\n\nNo matching items"
+    "text": "Exploring Palmer Penguins with Python\n\n\n\n\n\n\n\n\nSep 25, 2026\n\n\nYunpeng Xie\n\n\n\n\n\n\n\n\n\n\n\n\nExploring Palmer Penguins with R\n\n\n\n\n\n\n\n\nSep 25, 2026\n\n\nYunpeng Xie\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 8, 2026\n\n\nYunpeng Xie\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -82,5 +82,40 @@
     "title": "Exploring Palmer Penguins with Python",
     "section": "Flipper length and body mass",
     "text": "Flipper length and body mass\nThe scatter plot below shows the relationship between flipper length and body mass.\n\nplt.figure(figsize=(8, 5))\n\nfor species, group in penguins.groupby(\"species\"):\n    plt.scatter(\n        group[\"flipper_length_mm\"],\n        group[\"body_mass_g\"],\n        label=species,\n        alpha=0.7\n    )\n\nplt.xlabel(\"Flipper length (mm)\")\nplt.ylabel(\"Body mass (g)\")\nplt.title(\"Body mass vs. flipper length by species\")\nplt.legend()\nplt.show()"
+  },
+  {
+    "objectID": "posts/r-penguins/index.html",
+    "href": "posts/r-penguins/index.html",
+    "title": "Exploring Palmer Penguins with R",
+    "section": "",
+    "text": "In this post, I explore the Palmer Penguins dataset using R. The dataset contains measurements for penguins from three species observed in the Palmer Archipelago, Antarctica.\nData source: Palmer Penguins"
+  },
+  {
+    "objectID": "posts/r-penguins/index.html#introduction",
+    "href": "posts/r-penguins/index.html#introduction",
+    "title": "Exploring Palmer Penguins with R",
+    "section": "",
+    "text": "In this post, I explore the Palmer Penguins dataset using R. The dataset contains measurements for penguins from three species observed in the Palmer Archipelago, Antarctica.\nData source: Palmer Penguins"
+  },
+  {
+    "objectID": "posts/r-penguins/index.html#load-the-data",
+    "href": "posts/r-penguins/index.html#load-the-data",
+    "title": "Exploring Palmer Penguins with R",
+    "section": "Load the data",
+    "text": "Load the data\n\nlibrary(palmerpenguins)\n\n\nAttaching package: 'palmerpenguins'\n\n\nThe following objects are masked from 'package:datasets':\n\n    penguins, penguins_raw\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(ggplot2)\n\npenguins &lt;- palmerpenguins::penguins\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "posts/r-penguins/index.html#summary-by-species",
+    "href": "posts/r-penguins/index.html#summary-by-species",
+    "title": "Exploring Palmer Penguins with R",
+    "section": "Summary by species",
+    "text": "Summary by species\nThe following table compares the average body mass and flipper length across the three penguin species.\n\nspecies_summary &lt;- penguins |&gt;\n  group_by(species) |&gt;\n  summarise(\n    mean_body_mass_g = mean(body_mass_g, na.rm = TRUE),\n    mean_flipper_length_mm = mean(flipper_length_mm, na.rm = TRUE)\n  )\n\nspecies_summary\n\n# A tibble: 3 × 3\n  species   mean_body_mass_g mean_flipper_length_mm\n  &lt;fct&gt;                &lt;dbl&gt;                  &lt;dbl&gt;\n1 Adelie               3701.                   190.\n2 Chinstrap            3733.                   196.\n3 Gentoo               5076.                   217."
+  },
+  {
+    "objectID": "posts/r-penguins/index.html#flipper-length-and-body-mass",
+    "href": "posts/r-penguins/index.html#flipper-length-and-body-mass",
+    "title": "Exploring Palmer Penguins with R",
+    "section": "Flipper length and body mass",
+    "text": "Flipper length and body mass\nThe scatter plot below shows the relationship between flipper length and body mass for each penguin species.\n\nggplot(\n  penguins,\n  aes(\n    x = flipper_length_mm,\n    y = body_mass_g,\n    color = species\n  )\n) +\n  geom_point(alpha = 0.7) +\n  labs(\n    title = \"Body mass vs. flipper length by species\",\n    x = \"Flipper length (mm)\",\n    y = \"Body mass (g)\",\n    color = \"Species\"\n  ) +\n  theme_minimal()\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
   }
 ]
