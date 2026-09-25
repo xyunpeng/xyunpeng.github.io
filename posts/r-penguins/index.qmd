@@ -13,6 +13,9 @@ Data source: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/)
 ## Load the data
 
 ```{r}
+#| message: false
+#| warning: false
+
 library(palmerpenguins)
 library(dplyr)
 library(ggplot2)
@@ -41,6 +44,10 @@ species_summary
 The scatter plot below shows the relationship between flipper length and body mass for each penguin species.
 
 ```{r}
+#| label: fig-penguin-mass
+#| fig-cap: "Body mass versus flipper length by penguin species."
+#| warning: false
+
 ggplot(
   penguins,
   aes(
