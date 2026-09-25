@@ -1,0 +1,62 @@
+---
+title: "Exploring Palmer Penguins with Python"
+author: "Yunpeng Xie"
+date: 2026-09-25
+jupyter: python3
+---
+
+## Introduction
+
+In this post, I explore the Palmer Penguins dataset using Python. The dataset contains measurements for penguins from three species observed in the Palmer Archipelago, Antarctica.
+
+Data source: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/)
+
+## Load the data
+
+```{python}
+from palmerpenguins import load_penguins
+import pandas as pd
+import matplotlib.pyplot as plt
+
+penguins = load_penguins()
+penguins.head()
+```
+
+## Summary by species
+
+The following table compares the average body mass and flipper length across the three penguin species.
+
+```{python}
+species_summary = (
+    penguins.groupby("species")
+    .agg(
+        mean_body_mass_g=("body_mass_g", "mean"),
+        mean_flipper_length_mm=("flipper_length_mm", "mean")
+    )
+    .round(1)
+)
+
+species_summary
+```
+
+## Flipper length and body mass
+
+The scatter plot below shows the relationship between flipper length and body mass.
+
+```{python}
+plt.figure(figsize=(8, 5))
+
+for species, group in penguins.groupby("species"):
+    plt.scatter(
+        group["flipper_length_mm"],
+        group["body_mass_g"],
+        label=species,
+        alpha=0.7
+    )
+
+plt.xlabel("Flipper length (mm)")
+plt.ylabel("Body mass (g)")
+plt.title("Body mass vs. flipper length by species")
+plt.legend()
+plt.show()
+```
